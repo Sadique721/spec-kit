@@ -1,0 +1,41 @@
+schema_version: "1.0"
+
+preset:
+  id: "enterprise-spring-sdd"
+  name: "Enterprise Spring Boot & Microservices SDD"
+  version: "1.0.0"
+  description: "Contract-first Spec-Driven Development preset tailored for Spring Boot 3, JPA/Hibernate, Kafka event streaming, and AI-agent microservices."
+  author: "Md Sadique Amin (@Sadique721)"
+  repository: "https://github.com/Sadique721/spec-kit"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=0.6.0"
+
+provides:
+  templates:
+    - type: "command"
+      name: "speckit.specify"
+      file: "commands/speckit.specify.md"
+      description: "Enterprise specify - formal requirements with REST contracts, validation constraints, and domain entities"
+      replaces: "speckit.specify"
+
+    - type: "command"
+      name: "speckit.plan"
+      file: "commands/speckit.plan.md"
+      description: "Enterprise plan - Spring Boot 3 architecture, JPA entities, Liquibase/Flyway migrations, and Kafka topics"
+      replaces: "speckit.plan"
+
+    - type: "command"
+      name: "speckit.constitution"
+      file: "commands/speckit.constitution.md"
+      description: "Enterprise constitution - enforces test gates, zero secrets, idempotent transactions, and clean layering"
+      replaces: "speckit.constitution"
+
+tags:
+  - "enterprise"
+  - "spring-boot"
+  - "microservices"
+  - "java"
+  - "kafka"
+  - "sdd"
