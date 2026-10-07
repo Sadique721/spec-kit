@@ -1,0 +1,22 @@
+schema_version: "1.0"
+
+bundle:
+  id: "enterprise-sdd-mesh"
+  name: "Enterprise SDD & Multi-Agent Mesh"
+  version: "1.0.0"
+  role: "enterprise-architect"
+  description: "Orchestrated enterprise Spec-Driven Development: constitution checks, OpenAPI contract verification, Testcontainers execution, and multi-agent convergence."
+  author: "Md Sadique Amin (@Sadique721)"
+  license: "MIT"
+
+requires:
+  speckit_version: ">=0.9.0"
+  tools: []
+  mcp: []
+
+provides:
+  presets:
+    - id: "enterprise-spring-sdd"
+      version: "1.0.0"
+
+tags: ["enterprise", "spring-boot", "microservices", "multi-agent", "sdd", "convergence"]
